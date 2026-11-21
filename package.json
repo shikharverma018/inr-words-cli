@@ -1,0 +1,48 @@
+{
+  "name": "inr-words-cli",
+  "version": "1.0.0",
+  "description": "Zero-dependency Indian numbering and INR currency words converter with CLI support",
+  "main": "./src/index.js",
+  "module": "./src/index.mjs",
+  "types": "./src/index.d.ts",
+  "type": "commonjs",
+  "bin": {
+    "inr-words": "bin/cli.js",
+    "inr-words-cli": "bin/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.mjs",
+      "require": "./src/index.js",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "inr",
+    "indian-currency",
+    "number-to-words",
+    "lakhs",
+    "crores",
+    "cli",
+    "rupees"
+  ],
+  "author": "Shikhar Verma",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shikharverma/inr-words-cli.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
